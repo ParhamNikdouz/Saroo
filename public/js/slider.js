@@ -6,8 +6,8 @@ var slides = document.querySelectorAll('.slider-container div');
 var slideNumber = slides.length;
 var i = 0;
 var interval;
-var next = document.querySelector('.btn_next');
-var prev = document.querySelector('.btn_prev');
+//var next = document.querySelector('.btn_next');
+//var prev = document.querySelector('.btn_prev');
 var ul = document.querySelector('.indicator ul');
 function slide () {
     interval = setInterval(function () {
@@ -23,7 +23,7 @@ function slide () {
 }
 slide();
 /* next btn */
-next.onclick = function toNext() {
+/*next.onclick = function toNext() {
     i++;
     if(i == slideNumber){
         i = 0;
@@ -32,9 +32,9 @@ next.onclick = function toNext() {
     slides[i].classList.add('selected');
     document.querySelector('.indicator ul li.select').classList.remove('select');
     liNumber[i].classList.add('select');
-}
+}*/
 /* prev btn */
-prev.onclick = function toPrev() {
+/*prev.onclick = function toPrev() {
     if (i == 0) {
         i = slideNumber;
     }
@@ -43,7 +43,7 @@ prev.onclick = function toPrev() {
     slides[i].classList.add('selected');
     document.querySelector('.indicator ul li.select').classList.remove('select');
     liNumber[i].classList.add('select');
-}
+}*/
 /* onmouseover event */
 content.onmouseover = function enter() {
     clearInterval(interval);

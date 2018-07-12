@@ -8,14 +8,14 @@
                 <div style="background-image: url('/images/smarthome.jpg');"></div>
                 <div style="background-image: url('/images/shakehand.jpg');"></div>
             </div>
-            <div class="buttons">
+            <!--<div class="buttons">
                 <span class="btn_next">
                     <i class="fa fa-angle-right" aria-hidden="true"></i>
                 </span>
                 <span class="btn_prev">
                     <i class="fa fa-angle-left" aria-hidden="true"></i>
                 </span>
-            </div>
+            </div>-->
             <div class="indicator">
                 <ul>
                 </ul>
