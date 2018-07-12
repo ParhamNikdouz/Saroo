@@ -1,67 +1,25 @@
 		<!-- Header Carousel -->
-		<header id="home" class="slide" style="background-color: black;">
-			<!--<ul class="cb-slideshow">
-				<li><span>image1</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>SMART BUSINESS SOLUTIONS!</h3></div>
-							</div>
-						</div>
-						<h4>PATROS – Free HTML5/CSS3 Responsive Website Template.</h4>
-					</div>
-				</li>
-				<li><span>image2</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>PREMIUM CREATIVE CONTENT!</h3></div>
-							</div>
-						</div>
-						<h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-					</div>
-				</li>
-				<li><span>image3</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>UNIQUE DESIGN!</h3></div>
-							</div>
-						</div>
-						<h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-					</div>
-				</li>
-				<li><span>Image 04</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>WEB AND GRAPHICS DESIGN</h3></div>
-							</div>
-						</div>
-						<h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-					</div>
-				</li>
-				<li><span>Image 05</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>DIGITAL MARKETING SOLUTIONS</h3></div>
-							</div>
-						</div>
-						<h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-					</div>
-				</li>
-				<li><span>Image 06</span>
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-12">
-								<div class="text-center"><h3>SEARCH ENGINE OPTIMIZATION!</h3></div>
-							</div>
-						</div>
-						<h4>Lorem Ipsum is simply dummy text of typesetting industry.</h4>
-					</div>
-				</li>
-			</ul>-->
+		<header id="home" class="carousel slide">
+            <div class="slider-container">
+                <div style="background-image: url('/images/slide3.jpg');" class="selected"></div>
+                <div style="background-image: url('/images/slide2.jpg');"></div>
+                <div style="background-image: url('/images/slide1.jpg');"></div>
+                <div style="background-image: url('/images/slide4.png');"></div>
+                <div style="background-image: url('/images/smarthome.jpg');"></div>
+                <div style="background-image: url('/images/shakehand.jpg');"></div>
+            </div>
+            <div class="buttons">
+                <span class="btn_next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </span>
+                <span class="btn_prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </span>
+            </div>
+            <div class="indicator">
+                <ul>
+                </ul>
+            </div>
 			<div class="intro-scroller">
 				<a class="inner-link" href="#about">
 					<div class="mouse-icon" style="opacity: 1;">
