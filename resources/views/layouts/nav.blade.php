@@ -12,14 +12,14 @@
 				</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-right custom-menu">
-						<li class="active"><a href="{{ route('index') }}">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#meet-team">Team</a></li>
-						<li><a href="#portfolio1">Portofolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li><a href="{{ route('posts') }}">Blog</a></li>
+						<li class="active"><a href="{{ route('index') }}">خانه</a></li>
+						<li><a href="#">یو پی اس</a></li>
+						<li><a href="#">هوشمند سازی</a></li>
+						<li><a href="#">دوره‌های آموزشی</a></li>
+						<li><a href="#">محصولات</a></li>
 						<li><a href="{{ route('singlePost') }}">Single</a></li>
+						<li><a href="{{-- route('index') --}}#about">درباره ما</a></li>
+						<li><a href="#contact">ارتباط با ما</a></li>
 					</ul>
 				</div>
 			</div>

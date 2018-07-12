@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -35,7 +35,7 @@
 				<div class="row">
 					<div class="col-md-offset-1 col-md-10">
 						<div class="text-center">
-							<h2>About Us</h2>
+							<h2>درباره ما</h2>
 							<img class="img-responsive displayed" src="/images/short.png" alt="Company about"/>
 							<div class="row">
 								<div class="col-md-12">
@@ -53,7 +53,7 @@
 		<section id="services">
 			<div class="orangeback">
 				<div class="container">
-					<div class="text-center homeport2"><h2>Services</h2></div>
+					<div class="text-center homeport2"><h2>خدمات ما</h2></div>
 					<div class="row">
 						<div class="col-md-12 homeservices1">
 							<div class="col-md-3 portfolio-item">
@@ -243,35 +243,36 @@
 		<div class="container">
 		<div class="row">
 			<div class="text-center">
-			<h2>Portfolio</h2>
+			<h2>محصولات</h2>
 			<img class="img-responsive displayed" src="/images/short.png" alt="about">
 			</div>
 
 			<ul class="filter nav nav-pills">
-			  <li data-value="all" ><a class="active" href="#">All</a></li>
-			  <li data-value="development"><a href="#">Development</a></li>
-			  <li data-value="webdesign"><a href="#">Web Design</a></li>
-			  <li data-value="mobileapps"><a href="#">Mobile Apps</a></li>
+			  <li data-value="all" ><a class="active" href="#">همه</a></li>
+			  <li data-value="development"><a href="#">یو پی اس</a></li>
+			  <li data-value="webdesign"><a href="#">هوشمند ساری</a></li>
+			  <li data-value="mobileapps"><a href="#">اعلام حریق و سیستم امنیتی</a></li>
 			</ul>
 
 			<ul class="port2">
-			  <li data-type="development" data-id="id-1" class="port3">
-				<a href="#" id="development1"><img src="/images/port1.jpg" alt=""></a></li>
-			  <li data-type="webdesign" data-id="id-2" class="port3">
-				<a href="#" id="webdesign1"><img src="/images/port2.jpg" alt=""></a>
-			  </li>
-			  <li data-type="mobileapps" data-id="id-3" class="port3">
-				<a href="#" id="mobileapps1"><img src="/images/port3.jpg" alt=""></a>
-			  </li>
-				<li data-type="development" data-id="id-4" class="port3">
-				<a href="#" id="development2"><img src="/images/port4.jpg" alt=""></a>
-			  </li>
-			  <li data-type="webdesign" data-id="id-5" class="port3">
-				<a href="#" id="webdesign2"><img src="/images/port5.jpg" alt=""></a>
-			  </li>
-			  <li data-type="mobileapps" data-id="id-6" class="port3">
-				<a href="#" id="mobileapps2"><img src="/images/port6.jpg" alt=""></a>
-			  </li>
+			    <li data-type="development" data-id="id-1" class="port3">
+    				<a href="#" id="development1"><img src="/images/port1.jpg" alt=""></a>
+                </li>
+    			<li data-type="development" data-id="id-4" class="port3">
+				    <a href="#" id="development2"><img src="/images/port4.jpg" alt=""></a>
+    			</li>
+    			<li data-type="webdesign" data-id="id-2" class="port3">
+				    <a href="#" id="webdesign1"><img src="/images/port2.jpg" alt=""></a>
+			    </li>
+			    <li data-type="webdesign" data-id="id-5" class="port3">
+				    <a href="#" id="webdesign2"><img src="/images/port5.jpg" alt=""></a>
+			    </li>
+			    <li data-type="mobileapps" data-id="id-3" class="port3">
+				    <a href="#" id="mobileapps1"><img src="/images/port3.jpg" alt=""></a>
+   			    </li>
+			    <li data-type="mobileapps" data-id="id-6" class="port3">
+				    <a href="#" id="mobileapps2"><img src="/images/port6.jpg" alt=""></a>
+			    </li>
 			</ul>
 		  </div>
 		</div>

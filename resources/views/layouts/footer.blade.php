@@ -4,7 +4,7 @@
 					<div class="col-md-12">
 						<div class="col-lg-12">
 							<div class="text-center color-elements">
-							<h2>Contact Us</h2>
+							<h2>ارتباط با ما</h2>
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-8">
@@ -12,29 +12,29 @@
 								<div class="row">
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="text" name="first_name" class="form-control custom-labels" id="name" placeholder="FULL NAME" required data-validation-required-message="Please write your name!"/>
+											<input type="text" name="first_name" class="form-control custom-labels" id="name" placeholder="نام کامل" required data-validation-required-message="Please write your name!"/>
 											<p class="help-block text-danger"></p>
 										</div>
 									</div>
 									<div class="col-sm-6 height-contact-element">
 										<div class="form-group">
-											<input type="email" name="email" class="form-control custom-labels" id="email" placeholder="EMAIL" required data-validation-required-message="Please write your email!"/>
+											<input type="email" name="email" class="form-control custom-labels" id="email" placeholder="ایمیل" required data-validation-required-message="Please write your email!"/>
 											<p class="help-block text-danger"></p>
 										</div>
 									</div>
 									<div class="col-sm-12 height-contact-element">
 										<div class="form-group">
-											<input type="text" name="message" class="form-control custom-labels" id="message" placeholder="WHAT'S ON YOUR MIND" required data-validation-required-message="Please write a message!"/>
+											<input type="text" name="message" class="form-control custom-labels" id="message" placeholder="متن نظر" required data-validation-required-message="Please write a message!"/>
 										</div>
 									</div>
 									<div class="col-sm-3 col-xs-6 height-contact-element">
 										<div class="form-group">
-											<input type="submit" class="btn btn-md btn-custom btn-noborder-radius" value="Send It"/>
+											<input type="submit" class="btn btn-md btn-custom btn-noborder-radius" value="ارسال"/>
 										</div>
 									</div>
 									<div class="col-sm-3 col-xs-6 height-contact-element">
 										<div class="form-group">
-											<button type="button" class="btn btn-md btn-noborder-radius btn-custom" name="reset">RESET
+											<button type="button" class="btn btn-md btn-noborder-radius btn-custom" name="reset">بازنشانی
 											</button>
 										</div>
 									</div>
@@ -54,19 +54,19 @@
 								<div class="col-md-12 height-contact-element">
 									<div class="form-group">
 										<i class="fa fa-2x fa-map-marker"></i>
-										<span class="text">LOCATION</span>
+										<span class="text">آدرس دفتر مرکزی: مازندران-ساری-خیابان خیام-مجتمع تجاری خیام-بلوک ۲ غربی-طبقه اول-واحد ۱۰۶</span>
 									</div>
 								</div>
 								<div class="col-md-12 height-contact-element">
 									<div class="form-group">
 										<i class="fa fa-2x fa-phone"></i>
-										<span class="text">0051 768622115</span>
+										<span class="text">01133115979</span>
 									 </div>
 								 </div>
 								<div class="col-md-12 height-contact-element">
 									<div class="form-group">
 										<i class="fa fa-2x fa-envelope"></i>
-										<span class="text">info@company.com</span>
+										<span class="text">info@saroobms.com</span>
 									</div>
 								</div>
 							</div>
@@ -79,7 +79,7 @@
 		<section id="follow-us">
 			<div class="container">
 				<div class="text-center height-contact-element">
-					<h2>FOLLOW US</h2>
+					<h2>ما را دنبال کنید</h2>
 				</div>
 				<img class="img-responsive displayed" src="/images/short.png" alt="short" />
 				<div class="text-center height-contact-element">
