@@ -17,12 +17,13 @@ class CreateUsersTable extends Migration
             $table->bigIncrements('id');
             $table->string('first_name');
             $table->string('last_name');
+            $table->boolean('gender')->nullable();
             $table->string('password');
             $table->integer('type_id')->unsigned();
             $table->string('avatar')->nullable();
             $table->string('email')->nullable();
             $table->boolean('notif_email');
-            $table->string('mobile_number');
+            $table->string('mobile_number')->unique();
             $table->boolean('notif_mobile_number');
             $table->string('reference_code')->nullable();
             $table->text('description')->nullable();
@@ -32,9 +33,11 @@ class CreateUsersTable extends Migration
             $table->string('telephone')->nullable();
             $table->string('address')->nullable();
             $table->string('zipcode')->nullable();
+            $table->tinyInteger('city_id')->nullable();
+            $table->tinyInteger('province_id')->nullable();
             $table->bigInteger('score')->default(0);
-			$table->integer('sms_code')->nullable();
-            $table->boolean('status');
+			$table->integer('confirmation_code')->nullable();
+            $table->boolean('confirmed');
             $table->boolean('active_status');
             $table->rememberToken();
             $table->timestamps();
