@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBroadcastEmailTable extends Migration
+class CreatePostCategoryTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,13 @@ class CreateBroadcastEmailTable extends Migration
      */
     public function up()
     {
-        Schema::create('broadcast_email', function (Blueprint $table) {
+        Schema::create('post_category', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('title');
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 
@@ -26,6 +30,6 @@ class CreateBroadcastEmailTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('broadcast_email');
+        Schema::dropIfExists('post_category');
     }
 }

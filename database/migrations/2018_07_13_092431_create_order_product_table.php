@@ -15,7 +15,20 @@ class CreateOrderProductTable extends Migration
     {
         Schema::create('order_product', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('order_number');
+            $table->integer('user_id');
+            $table->integer('product_id')->unsigned();
+            $table->string('total_price')->nullable();
+            $table->boolean('cancelled');
+            $table->dateTime('cancelled_date')->nullable();
+            $table->boolean('payment_status');
+            $table->boolean('final_submit_status');
+            $table->boolean('send_status');
+            $table->boolean('rate_status');
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

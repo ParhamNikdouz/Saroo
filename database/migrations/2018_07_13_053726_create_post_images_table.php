@@ -15,7 +15,13 @@ class CreatePostImagesTable extends Migration
     {
         Schema::create('post_images', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('post_id');
+            $table->string('image_name')->nullable();
+            $table->tinyInteger('image_priority')->nullable();
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

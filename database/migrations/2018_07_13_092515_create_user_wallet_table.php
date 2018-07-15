@@ -15,7 +15,13 @@ class CreateUserWalletTable extends Migration
     {
         Schema::create('user_wallet', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->string('cash')->default(0);
+            $table->string('gift')->default(0);
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

@@ -15,7 +15,13 @@ class CreateProductImagesTable extends Migration
     {
         Schema::create('product_images', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('product_id');
+            $table->string('image_name')->nullable();
+            $table->tinyInteger('image_priority')->nullable();
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

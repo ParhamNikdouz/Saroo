@@ -15,7 +15,12 @@ class CreateFavoritePostTable extends Migration
     {
         Schema::create('favorite_post', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->integer('post_id');
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

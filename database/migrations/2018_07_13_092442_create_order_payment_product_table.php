@@ -15,7 +15,12 @@ class CreateOrderPaymentProductTable extends Migration
     {
         Schema::create('order_payment_product', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('order_id');
+            $table->dateTime('payment_date');
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

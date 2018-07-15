@@ -15,7 +15,12 @@ class CreateFavoriteProductTable extends Migration
     {
         Schema::create('favorite_product', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
+            $table->integer('product_id');
             $table->timestamps();
+            $table->engine = 'InnoDB';
+            $table->charset = 'utf8';
+            $table->collation = 'utf8_general_ci';
         });
     }
 

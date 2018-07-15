@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProductsTable extends Migration
+class CreateMessagesBoxTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,16 @@ class CreateProductsTable extends Migration
      */
     public function up()
     {
-        Schema::create('products', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->integer('user_id');
-            $table->integer('cat_id');
-            $table->string('slug');
+        Schema::create('messages_box', function (Blueprint $table) {
+            $table->increments('id');
+            $table->integer('sender_id');
+            $table->integer('reply_id')->nullable();
+            $table->integer('reciver_id')->nullable();
             $table->string('title')->nullable();
             $table->text('description')->nullable();
-            $table->boolean('status');
+            $table->tinyInteger('priority_id')->nullable();
+            $table->boolean('user_seeing_status');
+            $table->boolean('admin_seeing_status');
             $table->timestamps();
             $table->engine = 'InnoDB';
             $table->charset = 'utf8';
@@ -35,6 +37,6 @@ class CreateProductsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('products');
+        Schema::dropIfExists('messages_box');
     }
 }
