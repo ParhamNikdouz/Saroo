@@ -10,7 +10,11 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Auth::routes();
 
-Route::get('/', 'IndexController@index')->name('index');
+Route::get('/', 'HomeController@index')->name('home');
+
 Route::get('/posts', 'Post\PostController@posts')->name('posts');
 Route::get('/posts/singlePost', 'Post\PostController@singlePost')->name('singlePost');
+
+
