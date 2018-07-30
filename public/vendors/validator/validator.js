@@ -15,21 +15,21 @@ var validator = (function($){
     /* general text messages
     */
     message = {
-        invalid         : 'invalid input',
-        checked         : 'must be checked',
-        empty           : 'please put something here',
-        min             : 'input is too short',
-        max             : 'input is too long',
-        number_min      : 'too low',
-        number_max      : 'too high',
-        url             : 'invalid URL',
-        number          : 'not a number',
-        email           : 'email address is invalid',
-        email_repeat    : 'emails do not match',
-        password_repeat : 'passwords do not match',
-        repeat          : 'no match',
-        complete        : 'input is not complete',
-        select          : 'Please select an option'
+        invalid         : 'ورودی نامعتبر',
+        checked         : 'باید بررسی شود',
+        empty           : 'این فیلد الزامی است',
+        min             : 'ورودی خیلی کوتاه است',
+        max             : 'ورودی بیش از حد طولانی است',
+        number_min      : 'خیلی کم است',
+        number_max      : 'خیلی بالا است',
+        url             : 'نشانی اینترنتی نامعتبر',
+        number          : 'یک عدد نیست',
+        email           : 'آدرس ایمیل معتبر نیست',
+        email_repeat    : 'ایمیل ها مطابقت ندارد',
+        password_repeat : 'رمزهای ورود مطابقت ندارند',
+        repeat          : 'مطابقت ندارد',
+        complete        : 'ورودی کامل نیست',
+        select          : 'لطفا یک گزینه را انتخاب کنید'
     };
 
     if(!window.console){

@@ -2,6 +2,7 @@
 <html lang="fa">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -65,30 +66,34 @@
 
         <div id="register" class="animate form registration_form">
           <section class="login_content">
-            <form method="post" action="{{-- route('') --}}" data-parsley-validate class="form-horizontal form-label-left" id="demo-form2">
+            <form method="post" action="{{-- route('') --}}" class="form-horizontal form-label-left" novalidate>
                 {{ csrf_field() }}
               <h1>ثبت نام </h1>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="نام" required="" />
-                <!--<ul class="parsley-errors-list filled" id="parsley-id-5"><li class="parsley-required">This value is required.</li></ul>-->
+              <div class="item form-group">
+                <input type="text" class="form-control" placeholder="نام" required="required" name="first_name" />
+                @if ($errors->has('first_name'))
+                    <div class="alert">
+                        <strong>{{ $errors->first('first_name') }}</strong>
+                    </div>
+                @endif
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="نام خانوادگی" required="" />
+              <div class="item form-group">
+                <input type="text" class="form-control" placeholder="نام خانوادگی" required="required" />
               </div>
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="شماره تلفن همراه" required="" />
+              <div class="item form-group">
+                <input type="text" class="form-control" placeholder="شماره تلفن همراه" required="required" />
               </div>
-              <div class="form-group">
-                <input type="email" class="form-control" placeholder="ایمیل" />
+              <div class="item form-group">
+                <input type="email" class="form-control" placeholder="ایمیل" name="email" />
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="کلمه عبور" required="" />
+              <div class="item form-group">
+                <input type="password" class="form-control" placeholder="کلمه عبور" name="password" required="required" />
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="تایید کلمه عبور" required="" />
+              <div class="item form-group">
+                <input type="password" class="form-control" placeholder="تایید کلمه عبور" name="password_confirmation" required="required" />
               </div>
-              <div class="form-group">
-                <input type="password" class="form-control" placeholder="کد معرف" required="" />
+              <div class="item form-group">
+                <input type="password" class="form-control" placeholder="کد معرف" />
               </div>
               <div class="form-group">
                 <button type="submit" class="btn btn-default submit">ثبت نام</button>
@@ -117,8 +122,13 @@
 
     <!-- jQuery -->
     <script src="/vendors/jquery/dist/jquery.min.js"></script>
-    <!-- Parsley -->
-    <script src="/vendors/parsleyjs/dist/parsley.js"></script>
+    <!-- Bootstrap -->
+    <script src="/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="/vendors/fastclick/lib/fastclick.js"></script>
+    <!-- validator -->
+    <script src="/vendors/validator/validator.js"></script>
+
     <!-- Custom Theme Scripts -->
     <script src="/build/js/custom.min.js"></script>
 
