@@ -25,6 +25,11 @@
   </head>
 
   <body class="login">
+  @if (count($errors))
+    @foreach ($errors->all() as $error)
+    {{-- $error --}}
+    @endforeach
+  @endif
     <div>
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
@@ -32,78 +37,39 @@
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
-            <form>
-              <h1>Login Form</h1>
+            <form method="post" action="{{ route('login') }}" class="form-horizontal form-label-left">
+              {{ csrf_field() }}
+              <h1>ورود</h1>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
-              </div>
-              <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
-              </div>
-              <div>
-                <a class="btn btn-default submit" href="index.html">Log in</a>
-                <a class="reset_pass" href="#">Lost your password?</a>
-              </div>
-
-              <div class="clearfix"></div>
-
-              <div class="separator">
-                <p class="change_link">New to site?
-                  <a href="#signup" class="to_register"> Create Account </a>
-                </p>
-
-                <div class="clearfix"></div>
-                <br />
-
-                <div>
-                  <h1><i class="fa fa-paw"></i> Gentelella Alela!</h1>
-                  <p>©2016 All Rights Reserved. Gentelella Alela! is a Bootstrap 3 template. Privacy and Terms</p>
-                </div>
-              </div>
-            </form>
-          </section>
-        </div>
-
-        <div id="register" class="animate form registration_form">
-          <section class="login_content">
-            <form method="post" action="{{-- route('') --}}" class="form-horizontal form-label-left" novalidate>
-                {{ csrf_field() }}
-              <h1>ثبت نام </h1>
-              <div class="item form-group">
-                <input type="text" class="form-control" placeholder="نام" required="required" name="first_name" />
-                @if ($errors->has('first_name'))
-                    <div class="alert">
-                        <strong>{{ $errors->first('first_name') }}</strong>
-                    </div>
+                <input type="text" class="form-control form-group{{ $errors->has('mobile_number') ? ' parsley-error' : '' }}" placeholder="شماره تلفن همراه" name="mobile_number" value="{{ old('mobile_number') }}" />
+                @if ($errors->has('mobile_number'))
+                    <ul class="parsley-errors-list filled" id="parsley-id-5">
+                        <li class="parsley-required">
+                            {{ $errors->first('mobile_number') }}
+                        </li>
+                    </ul>
                 @endif
               </div>
-              <div class="item form-group">
-                <input type="text" class="form-control" placeholder="نام خانوادگی" required="required" />
+              <div>
+                <input type="password" class="form-control form-group{{ $errors->has('password') ? ' parsley-error' : '' }}" placeholder="کلمه عبور" name="password" />
+                @if ($errors->has('password'))
+                    <ul class="parsley-errors-list filled" id="parsley-id-5">
+                        <li class="parsley-required">
+                            {{ $errors->first('password') }}
+                        </li>
+                    </ul>
+                @endif
               </div>
-              <div class="item form-group">
-                <input type="text" class="form-control" placeholder="شماره تلفن همراه" required="required" />
-              </div>
-              <div class="item form-group">
-                <input type="email" class="form-control" placeholder="ایمیل" name="email" />
-              </div>
-              <div class="item form-group">
-                <input type="password" class="form-control" placeholder="کلمه عبور" name="password" required="required" />
-              </div>
-              <div class="item form-group">
-                <input type="password" class="form-control" placeholder="تایید کلمه عبور" name="password_confirmation" required="required" />
-              </div>
-              <div class="item form-group">
-                <input type="password" class="form-control" placeholder="کد معرف" />
-              </div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-default submit">ثبت نام</button>
+              <div>
+                <button type="submit" class="btn btn-default submit">ورود</button>
+                <a class="reset_pass" href="#">رمز عبور خود را فراموش کردید؟</a>
               </div>
 
               <div class="clearfix"></div>
 
               <div class="separator">
-                <p class="change_link">قبلا ثبت نام کرده‌اید ؟
-                  <a href="#signin" class="to_register"> وارد شوید </a>
+                <p class="change_link">کاربر جدید هستید؟
+                  <a href="{{ route('register') }}" class="to_register"> ثبت نام کنید </a>
                 </p>
 
                 <div class="clearfix"></div>
@@ -117,6 +83,7 @@
             </form>
           </section>
         </div>
+
       </div>
     </div>
 
@@ -127,7 +94,7 @@
     <!-- FastClick -->
     <script src="/vendors/fastclick/lib/fastclick.js"></script>
     <!-- validator -->
-    <script src="/vendors/validator/validator.js"></script>
+    <!--<script src="/vendors/validator/validator.js"></script>-->
 
     <!-- Custom Theme Scripts -->
     <script src="/build/js/custom.min.js"></script>
