@@ -41,4 +41,11 @@
       <span class="sr-only">بعدی</span>
     </a>
   </div>
+  			<div class="intro-scroller">
+				<a class="inner-link" href="#about">
+					<div class="mouse-icon" style="opacity: 1;">
+						<div class="wheel"></div>
+					</div>
+				</a>
+			</div>
 </div>

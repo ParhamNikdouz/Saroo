@@ -1,5 +1,5 @@
 		<!-- Navigation -->
-		<nav class="navbar navbar-inverse" style="background-color: #EDEDED;">
+		<nav class="navbar navbar-inverse" style="background-color: #EDEDED; border-bottom: 3px solid #196f99;">
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -18,8 +18,8 @@
 						<li><a href="#">دوره‌های آموزشی</a></li>
 						<li><a href="#">محصولات</a></li>
 						<li><a href="{{ route('singlePost') }}">Single</a></li>
-						<li><a href="{{-- route('login') --}}#about">ورود</a></li>
-						<li><a href="{{-- route('signup') --}}#contact">ثبت نام</a></li>
+						<li><a href="{{ route('login') }}">ورود</a></li>
+						<li style="border-bottom: none;"><a href="{{ route('register') }}">ثبت نام</a></li>
 					</ul>
 				</div>
 			</div>

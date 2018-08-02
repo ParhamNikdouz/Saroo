@@ -250,7 +250,7 @@
 			<ul class="filter nav nav-pills">
 			  <li data-value="all" ><a class="active" href="#">همه</a></li>
 			  <li data-value="development"><a href="#">یو پی اس</a></li>
-			  <li data-value="webdesign"><a href="#">هوشمند ساری</a></li>
+			  <li data-value="webdesign"><a href="#">هوشمند سازی</a></li>
 			  <li data-value="mobileapps"><a href="#">اعلام حریق و سیستم امنیتی</a></li>
 			</ul>
 
@@ -622,6 +622,4 @@
 	 }
 
 </script>
-<script src="/js/slider.js"></script>
-
 </body>
