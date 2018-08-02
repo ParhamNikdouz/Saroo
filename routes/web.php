@@ -17,4 +17,5 @@ Route::get('/', 'HomeController@index')->name('home');
 Route::get('/posts', 'Post\PostController@posts')->name('posts');
 Route::get('/posts/singlePost', 'Post\PostController@singlePost')->name('singlePost');
 
+Route::get('/panel/PlainPage', 'Post\PostController@PlainPage');
 

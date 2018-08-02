@@ -15,4 +15,8 @@ class PostController extends Controller
     {
         return view('/post/singlePost');
     }
+    public function PlainPage()
+    {
+        return view('/panel/PlainPage');
+    }
 }
