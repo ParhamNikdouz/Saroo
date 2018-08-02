@@ -1,9 +1,5 @@
 		<!-- Navigation -->
-<!-- HEAD -->
-		<!--<nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #F7F7F7;">-->
-<!-- ======= -->
 		<nav class="navbar navbar-inverse" style="background-color: #EDEDED; border-bottom: 3px solid #196f99;">
-<!-- admin-panel -->
 			<div class="container">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
