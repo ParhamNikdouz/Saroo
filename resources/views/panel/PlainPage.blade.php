@@ -13,7 +13,7 @@
     <link href="/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-rtl.min.css" rel="stylesheet">
     <!-- Font Awesome -->
-    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- NProgress -->
     <link href="/vendors/nprogress/nprogress.css" rel="stylesheet">
 
@@ -27,20 +27,21 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><i class="fa fa-paw"></i> <span>Gentelella Alela!</span></a>
+              <a href="index.html" class="site_title"><img src="/images/sarooLogo.png" style="width: 150px; height: 40px;"/><!--<span>Saroo!</span>--></a>
             </div>
 
             <div class="clearfix"></div>
 
             <!-- menu profile quick info -->
             <div class="profile clearfix">
-              <div class="profile_pic">
-                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
-              </div>
               <div class="profile_info">
-                <span>Welcome,</span>
-                <h2>John Doe</h2>
+                <h2>کامی سحرخیز</h2>
+                <span>خوش آمدید</span>
               </div>
+              <div class="profile_pic">
+                <img src="/images/avatar1.png" alt="..." class="img-circle profile_img">
+              </div>
+
               <div class="clearfix"></div>
             </div>
             <!-- /menu profile quick info -->
@@ -50,7 +51,6 @@
             <!-- sidebar menu -->
             <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
               <div class="menu_section">
-                <h3>General</h3>
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-home"></i> Home <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -105,8 +105,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="menu_section">
-                <h3>Live On</h3>
+              <!--<div class="menu_section">
                 <ul class="nav side-menu">
                   <li><a><i class="fa fa-bug"></i> Additional Pages <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
@@ -146,7 +145,7 @@
                   </li>                  
                   <li><a href="javascript:void(0)"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a></li>
                 </ul>
-              </div>
+              </div>-->
 
             </div>
             <!-- /sidebar menu -->
@@ -178,27 +177,27 @@
                 <a id="menu_toggle"><i class="fa fa-bars"></i></a>
               </div>
 
-              <ul class="nav navbar-nav navbar-right">
+              <ul class="nav navbar-nav navbar-left">
                 <li class="">
-                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                  <!--<a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
                     <img src="images/img.jpg" alt="">John Doe
                     <span class=" fa fa-angle-down"></span>
                   </a>
-                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <ul class="dropdown-menu dropdown-usermenu pull-left">
                     <li><a href="javascript:;"> Profile</a></li>
                     <li>
                       <a href="javascript:;">
-                        <span class="badge bg-red pull-right">50%</span>
+                        <span class="badge bg-red pull-left">50%</span>
                         <span>Settings</span>
                       </a>
                     </li>
                     <li><a href="javascript:;">Help</a></li>
-                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
-                  </ul>
+                    <li><a href="login.html"><i class="fa fa-sign-out pull-left"></i> Log Out</a></li>
+                  </ul>-->
                 </li>
 
                 <li role="presentation" class="dropdown">
-                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <!--<a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
                     <i class="fa fa-envelope-o"></i>
                     <span class="badge bg-green">6</span>
                   </a>
@@ -259,7 +258,7 @@
                         </a>
                       </div>
                     </li>
-                  </ul>
+                  </ul>-->
                 </li>
               </ul>
             </nav>
@@ -271,12 +270,8 @@
         <div class="right_col" role="main">
           <div class="">
             <div class="page-title">
-              <div class="title_left">
-                <h3>Plain Page</h3>
-              </div>
-
-              <div class="title_right">
-                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+              <!--<div class="title_right">
+                <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-left top_search">
                   <div class="input-group">
                     <input type="text" class="form-control" placeholder="Search for...">
                     <span class="input-group-btn">
@@ -284,7 +279,12 @@
                     </span>
                   </div>
                 </div>
+              </div>-->
+              <div class="title_right">
+                <h3>Plain Page</h3>
               </div>
+
+
             </div>
 
             <div class="clearfix"></div>
@@ -323,7 +323,7 @@
 
         <!-- footer content -->
         <footer>
-          <div class="pull-right">
+          <div class="pull-left">
             Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
           </div>
           <div class="clearfix"></div>
