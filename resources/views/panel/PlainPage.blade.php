@@ -27,7 +27,7 @@
         <div class="col-md-3 left_col">
           <div class="left_col scroll-view">
             <div class="navbar nav_title" style="border: 0;">
-              <a href="index.html" class="site_title"><img src="/images/sarooLogo.png" style="width: 150px; height: 40px;"/><!--<span>Saroo!</span>--></a>
+              <a href="{{ route('home') }}" class="site_title"><img src="/images/sarooLogo.png" style="width: 50px; height: 40px;"/><span style="font-size: 14px; margin-right: 8px;">کنترل پنل سارو</span></a>
             </div>
 
             <div class="clearfix"></div>
@@ -59,7 +59,7 @@
                       <li><a href="index3.html">Dashboard3</a></li>
                     </ul>
                   </li>
-                  <li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
+                  <!--<li><a><i class="fa fa-edit"></i> Forms <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="form.html">General Form</a></li>
                       <li><a href="form_advanced.html">Advanced Components</a></li>
@@ -102,7 +102,7 @@
                       <li><a href="fixed_sidebar.html">Fixed Sidebar</a></li>
                       <li><a href="fixed_footer.html">Fixed Footer</a></li>
                     </ul>
-                  </li>
+                  </li>-->
                 </ul>
               </div>
               <!--<div class="menu_section">
@@ -294,17 +294,17 @@
                 <div class="x_panel">
                   <div class="x_title">
                     <h2>Plain Page</h2>
-                    <ul class="nav navbar-right panel_toolbox">
+                    <ul class="nav navbar-left panel_toolbox">
                       <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
                       </li>
                       <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                        <ul class="dropdown-menu" role="menu">
+                        <!--<ul class="dropdown-menu" role="menu">
                           <li><a href="#">Settings 1</a>
                           </li>
                           <li><a href="#">Settings 2</a>
                           </li>
-                        </ul>
+                        </ul>-->
                       </li>
                       <li><a class="close-link"><i class="fa fa-close"></i></a>
                       </li>
